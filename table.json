@@ -1,0 +1,9 @@
+{
+  "categories": ["January", "February", "March", "April"],
+  "series": [
+    {
+      "name": "Sales",
+      "data": [1000, 2000, 1500, 2500]
+    }
+  ]
+}
