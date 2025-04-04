@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "Loan ID": "1234",
+      "Customer": "John Doe",
+      "Status": "Declined",
+      "Date": "2024-04-04"
+    },
+    {
+      "Loan ID": "5678",
+      "Customer": "Jane Smith",
+      "Status": "Pending",
+      "Date": "2024-04-05"
+    }
+  ]
+}
