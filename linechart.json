@@ -1,0 +1,113 @@
+{
+  "root": {
+    "chart": {
+      "type": "line",
+      "renderTo": "container",
+      "backgroundColor": "transparent",
+      "lineColor": "rgba(35,37,38,100)",
+      "plotShadow": false
+    },
+    "title": {
+      "style": {
+        "color": "#b9bbbb"
+      },
+      "text": ""
+    },
+    "xAxis": {
+      "title": {
+        "style": {
+          "color": "white"
+        },
+        "text": ""
+      },
+      "categories": "Array",
+      "labels": {
+        "style": {
+          "color": "white"
+        }
+      }
+    },
+    "yAxis": [
+      {
+        "value": {
+          "title": {
+            "style": {
+              "color": "white"
+            },
+            "text": ""
+          },
+          "min": 0,
+          "labels": {
+            "style": {
+              "color": "white"
+            }
+          }
+        }
+      },
+      {
+        "value": {
+          "title": {
+            "style": {
+              "color": "Highcharts.getOptions().colors[0]"
+            },
+            "text": ""
+          },
+          "labels": {
+            "style": {
+              "color": "Highcharts.getOptions().colors[0]"
+            }
+          },
+          "opposite": true,
+          "min": 0
+        }
+      }
+    ],
+    "legend": {
+      "itemStyle": {
+        "color": "white"
+      },
+      "layout": "vertical",
+      "align": "right",
+      "verticalAlign": "middle",
+      "borderWidth": 0
+    },
+    "series": [
+      {
+        "value": {
+          "color": "",
+          "name": "",
+          "yAxis": "",
+          "data": "Array",
+          "dashStyle": ""
+        }
+      },
+      {
+        "value": {
+          "color": "",
+          "name": "",
+          "yAxis": "",
+          "data": "Array",
+          "dashStyle": ""
+        }
+      },
+      {
+        "value": {
+          "color": "",
+          "name": "",
+          "yAxis": "",
+          "data": "Array",
+          "dashStyle": ""
+        }
+      },
+      {
+        "value": {
+          "color": "",
+          "name": "",
+          "yAxis": "",
+          "data": "Array",
+          "dashStyle": ""
+        }
+      }
+    ]
+  }
+}
