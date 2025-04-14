@@ -1,0 +1,169 @@
+<root>
+    <chart>
+        <type>line</type>
+        <renderTo>container</renderTo>
+        <backgroundColor>transparent</backgroundColor>
+        <lineColor>rgba(35,37,38,100)</lineColor>
+        <plotShadow>false</plotShadow>
+    </chart>
+    <title>
+        <style>
+            <color>#b9bbbb</color>
+        </style>
+        <text>Approval and Underwriting to Loan Rates</text>
+    </title>
+    <xAxis>
+        <title>
+            <style>
+                <color>white</color>
+            </style>
+            <text>Week</text>
+        </title>
+        <categories type="Array">
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>4</value>
+            <value>5</value>
+            <value>6</value>
+            <value>7</value>
+            <value>8</value>
+            <value>9</value>
+            <value>10</value>
+            <value>11</value>
+            <value>12</value>
+            <value>13</value>
+        </categories>
+        <labels>
+            <style>
+                <color>white</color>
+            </style>
+        </labels>
+    </xAxis>
+    <yAxis type="Array">
+        <value>
+            <title>
+                <style>
+                    <color>white</color>
+                </style>
+                <text>Percentage</text>
+            </title>
+            <min>0</min>
+            <labels>
+                <style>
+                    <color>white</color>
+                </style>
+            </labels>
+        </value>
+        <value>
+            <title>
+                <style>
+                    <color value-type="javascript"> Highcharts.getOptions().colors[0] </color>
+                </style>
+                <text>Percentage</text>
+            </title>
+            <labels>
+                <style>
+                    <color value-type="javascript"> Highcharts.getOptions().colors[0] </color>
+                </style>
+            </labels>
+            <opposite>true</opposite>
+            <min>0</min>
+        </value>
+    </yAxis>
+    <legend>
+        <itemStyle>
+            <color>white</color>
+        </itemStyle>
+        <layout>vertical</layout>
+        <align>right</align>
+        <verticalAlign>middle</verticalAlign>
+        <borderWidth>0</borderWidth>
+    </legend>
+    <series type="Array">
+        <value>
+            <color>#FF0000</color>
+            <name>Approval Rate (Non PPC)</name>
+            <yAxis>0</yAxis>
+            <dashStyle>Solid</dashStyle>
+            <data type="Array">
+                <value>35.0710900473934</value>
+                <value>32.843137254902</value>
+                <value>35.8078602620087</value>
+                <value>32.3943661971831</value>
+                <value>33.8235294117647</value>
+                <value>38.7755102040816</value>
+                <value>28.7958115183246</value>
+                <value>33.6538461538462</value>
+                <value>35.8139534883721</value>
+                <value>37.3333333333333</value>
+                <value>31.8681318681319</value>
+                <value>33.2075471698113</value>
+                <value>0</value>
+            </data>
+        </value>
+        <value>
+            <color>#0000FF</color>
+            <name>Approval Rate (PPC)</name>
+            <yAxis>0</yAxis>
+            <dashStyle>Solid</dashStyle>
+            <data type="Array">
+                <value>43.574297188755</value>
+                <value>40.8906882591093</value>
+                <value>39.568345323741</value>
+                <value>41.5506958250497</value>
+                <value>35.1351351351351</value>
+                <value>42.5352112676056</value>
+                <value>40.1420959147425</value>
+                <value>38.0184331797235</value>
+                <value>37.202380952381</value>
+                <value>41.0714285714286</value>
+                <value>39.4392523364486</value>
+                <value>33.4745762711864</value>
+                <value>0</value>
+            </data>
+        </value>
+        <value>
+            <color>#FF0000</color>
+            <name>UW to Loan Rate (Non PPC)</name>
+            <yAxis>0</yAxis>
+            <dashStyle>Dash</dashStyle>
+            <data type="Array">
+                <value>41.1764705882353</value>
+                <value>50</value>
+                <value>37.5</value>
+                <value>46.875</value>
+                <value>51.7241379310345</value>
+                <value>47.8260869565217</value>
+                <value>35.2941176470588</value>
+                <value>54.5454545454545</value>
+                <value>48.5714285714286</value>
+                <value>65</value>
+                <value>38.2352941176471</value>
+                <value>12.1212121212121</value>
+                <value>0</value>
+            </data>
+        </value>
+        <value>
+            <color>#0000FF</color>
+            <name>UW to Loan Rate (PPC)</name>
+            <yAxis>0</yAxis>
+            <dashStyle>Dash</dashStyle>
+            <data type="Array">
+                <value>30.1587301587302</value>
+                <value>35.1851851851852</value>
+                <value>38.4615384615385</value>
+                <value>39.6551724137931</value>
+                <value>50</value>
+                <value>41.6666666666667</value>
+                <value>45.945945945946</value>
+                <value>32.7586206896552</value>
+                <value>38</value>
+                <value>41.5094339622642</value>
+                <value>37.0786516853933</value>
+                <value>31.4814814814815</value>
+                <value>0</value>
+            </data>
+        </value>
+    </series>
+</root>
