@@ -1,0 +1,91 @@
+{
+  "chart": {
+    "type": "column",
+    "backgroundColor": "transparent"
+  },
+  "title": {
+    "text": "Hourly Outbound Text Volume via SBT",
+    "style": {
+      "color": "white"
+    }
+  },
+  "xAxis": {
+    "categories": {
+      "type": "Array",
+      "value": ["Fri", "Mon", "Sat", "Sun", "Thu", "Tue", "Wed"]
+    },
+    "labels": {
+      "style": {
+        "color": "white"
+      }
+    }
+  },
+  "yAxis": {
+    "title": {
+      "style": {
+        "color": "white"
+      },
+      "text": "Text Volume"
+    },
+    "min": "0",
+    "labels": {
+      "style": {
+        "color": "white"
+      }
+    },
+    "stackLabels": {
+      "enabled": "true",
+      "style": {
+        "fontWeight": "bold",
+        "color": "yellow"
+      }
+    }
+  },
+  "legend": {
+    "itemStyle": {
+      "color": "white"
+    },
+    "layout": "horizontal",
+    "align": "center",
+    "verticalAlign": "bottom",
+    "borderWidth": "0"
+  },
+  "plotOptions": {
+    "column": {
+      "stacking": "normal",
+      "dataLabels": {
+        "enabled": "true",
+        "color": "white"
+      }
+    }
+  },
+  "series": {
+    "type": "Array",
+    "value": [
+      {
+        "color": "#C43A4D",
+        "name": "0AM - 8AM",
+        "data": {
+          "type": "Array",
+          "value": ["4", "0", "6", "8", "4", "0", "4"]
+        }
+      },
+      {
+        "color": "#0D233A",
+        "name": "8AM - 5PM",
+        "data": {
+          "type": "Array",
+          "value": ["4959", "6727", "4237", "11", "5404", "0", "4997"]
+        }
+      },
+      {
+        "color": "#C43A4D",
+        "name": "5PM - 12AM",
+        "data": {
+          "type": "Array",
+          "value": ["39", "6", "6", "2", "49", "0", "31"]
+        }
+      }
+    ]
+  }
+}
