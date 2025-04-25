@@ -1,0 +1,126 @@
+chart: {
+    type: 'pie',
+    backgroundColor: '#272953',
+    events: {
+      load: function () {
+        const chart = this;
+        const labels = [
+          '04/18 - Fri', '04/19 - Sat', '04/20 - Sun',
+          '04/21 - Mon', '04/22 - Tue', '04/23 - Wed', '04/24 - Thu'
+        ];
+        const percents = [5, 20, 35, 50, 65, 80, 95];
+
+        labels.forEach(function (label, i) {
+          const x = chart.plotLeft + chart.plotWidth * (percents[i] / 100);
+          const y = chart.plotTop + chart.plotHeight / 2 + 90;
+
+          chart.renderer.text(label, x, y)
+            .css({
+              color: '#ffffff',
+              fontSize: '10px',
+              fontWeight: 'bold'
+            })
+            .add();
+        });
+      }
+    }
+  },
+
+  title: {
+    text: 'Outbound Text Volume After Hours via SBT by Template',
+    style: { color: '#ffffff' }
+  },
+
+  credits: { enabled: false },
+
+  legend: {
+    itemStyle: { color: 'white' }
+  },
+
+  plotOptions: {
+    pie: {
+      size: 80,
+      dataLabels: { enabled: false }
+    }
+  },
+
+  series: [
+    {
+      name: '04/18 - Fri',
+      center: ['7%', '50%'],
+      showInLegend: true,
+      data: [
+        ['Welcome Text', 2],
+        ['HelloSign', 0],
+        ['Origination', 1],
+        ['Funding', 2],
+        ['Servicing', 0]
+      ]
+    },
+    {
+      name: '04/19 - Sat',
+      center: ['21%', '50%'],
+      data: [
+        ['Welcome Text', 5],
+        ['HelloSign', 2],
+        ['Origination', 0],
+        ['Funding', 0],
+        ['Servicing', 0]
+      ]
+    },
+    {
+      name: '04/20 - Sun',
+      center: ['35%', '50%'],
+      data: [
+        ['Welcome Text', 0],
+        ['HelloSign', 0],
+        ['Origination', 0],
+        ['Funding', 0],
+        ['Servicing', 0]
+      ]
+    },
+    {
+      name: '04/21 - Mon',
+      center: ['49%', '50%'],
+      data: [
+        ['Welcome Text', 0],
+        ['HelloSign', 0],
+        ['Origination', 3],
+        ['Funding', 2],
+        ['Servicing', 1]
+      ]
+    },
+    {
+      name: '04/22 - Tue',
+      center: ['63%', '50%'],
+      data: [
+        ['Welcome Text', 2],
+        ['HelloSign', 2],
+        ['Origination', 1],
+        ['Funding', 0],
+        ['Servicing', 0]
+      ]
+    },
+    {
+      name: '04/23 - Wed',
+      center: ['77%', '50%'],
+      data: [
+        ['Welcome Text', 2],
+        ['HelloSign', 0],
+        ['Origination', 1],
+        ['Funding', 0],
+        ['Servicing', 0]
+      ]
+    },
+    {
+      name: '04/24 - Thu',
+      center: ['91%', '50%'],
+      data: [
+        ['Welcome Text', 1],
+        ['HelloSign', 1],
+        ['Origination', 1],
+        ['Funding', 2],
+        ['Servicing', 0]
+      ]
+    }
+  ]
