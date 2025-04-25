@@ -1,0 +1,74 @@
+{
+  "chart": {
+    "type": "pie",
+    "custom": {},
+    "events": {
+      "render": "function() {\n  const chart = this,\n        series = chart.series[0];\n  let customLabel = chart.options.chart.custom.label;\n\n  if (!customLabel) {\n    customLabel = chart.options.chart.custom.label =\n      chart.renderer.label(\n        'Total<br/>' +\n        '<strong>2 877 820</strong>'\n      )\n      .css({\n        color: '#000',\n        textAnchor: 'middle'\n      })\n      .add();\n  }\n\n  const x = series.center[0] + chart.plotLeft,\n        y = series.center[1] + chart.plotTop - (customLabel.attr('height') / 2);\n\n  customLabel.attr({\n    x,\n    y\n  });\n\n  customLabel.css({\n    fontSize: `${series.center[2] / 12}px`\n  });\n}"
+    }
+  },
+  "accessibility": {
+    "point": {
+      "valueSuffix": "%"
+    }
+  },
+  "title": {
+    "text": "2023 Norway car registrations"
+  },
+  "subtitle": {
+    "text": "Source: <a href=\"https://www.ssb.no/transport-og-reiseliv/faktaside/bil-og-transport\">SSB</a>"
+  },
+  "tooltip": {
+    "pointFormat": "{series.name}: <b>{point.percentage:.0f}%</b>"
+  },
+  "legend": {
+    "enabled": false
+  },
+  "plotOptions": {
+    "series": {
+      "allowPointSelect": true,
+      "cursor": "pointer",
+      "borderRadius": 8,
+      "dataLabels": [
+        {
+          "enabled": true,
+          "distance": 20,
+          "format": "{point.name}"
+        },
+        {
+          "enabled": true,
+          "distance": -15,
+          "format": "{point.percentage:.0f}%",
+          "style": {
+            "fontSize": "0.9em"
+          }
+        }
+      ],
+      "showInLegend": true
+    }
+  },
+  "series": [
+    {
+      "name": "Registrations",
+      "colorByPoint": true,
+      "innerSize": "75%",
+      "data": [
+        {
+          "name": "EV",
+          "y": 23.9
+        },
+        {
+          "name": "Hybrids",
+          "y": 12.6
+        },
+        {
+          "name": "Diesel",
+          "y": 37.0
+        },
+        {
+          "name": "Petrol",
+          "y": 26.4
+        }
+      ]
+    }
+  ]
+}
