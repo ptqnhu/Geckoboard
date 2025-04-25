@@ -1,0 +1,47 @@
+{
+  "chart": {
+    "type": "pie",
+    "backgroundColor": "#272953",
+    "events": {
+      "load": "function () { const chart = this; const labels = ['04/18 - Fri', '04/19 - Sat', '04/20 - Sun', '04/21 - Mon', '04/22 - Tue', '04/23 - Wed', '04/24 - Thu']; const percents = [10, 25, 40, 55, 70, 85, 95]; labels.forEach(function (label, i) { const x = chart.plotLeft + chart.plotWidth * (percents[i] / 100); const y = chart.plotTop + chart.plotHeight - 10; chart.renderer.text(label, x, y).css({ color: '#ffffff', fontSize: '10px', fontWeight: 'bold' }).add(); }); }"
+    }
+  },
+  "title": {
+    "text": "Outbound Text Volume by Template – After Hours",
+    "style": {
+      "color": "#ffffff"
+    }
+  },
+  "credits": {
+    "enabled": false
+  },
+  "legend": {
+    "enabled": false
+  },
+  "plotOptions": {
+    "pie": {
+      "size": 80,
+      "dataLabels": {
+        "enabled": false
+      }
+    }
+  },
+  "series": [
+    {
+      "name": "04/18 - Fri",
+      "center": ["10%", "40%"],
+      "data": [
+        ["Welcome", 2],
+        ["Funding", 1]
+      ]
+    },
+    {
+      "name": "04/19 - Sat",
+      "center": ["25%", "40%"],
+      "data": [
+        ["Welcome", 4],
+        ["Funding", 2]
+      ]
+    }
+  ]
+}
