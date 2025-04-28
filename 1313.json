@@ -1,0 +1,109 @@
+{
+  "chart": {
+    "type": "column",
+    "backgroundColor": "transparent"
+  },
+  "title": {
+    "text": "Outbound Text Volume After Hours via SBT by Template",
+    "style": {
+      "color": "white"
+    }
+  },
+  "xAxis": {
+    "categories": [
+      "04/21 - Mon",
+      "04/22 - Tue",
+      "04/23 - Wed",
+      "04/24 - Thu",
+      "04/25 - Fri",
+      "04/26 - Sat",
+      "04/27 - Sun"
+    ],
+    "labels": {
+      "style": {
+        "color": "white"
+      }
+    }
+  },
+  "yAxis": {
+    "title": {
+      "text": "Text Volume",
+      "style": {
+        "color": "white"
+      }
+    },
+    "min": 0,
+    "labels": {
+      "style": {
+        "color": "white"
+      }
+    },
+    "stackLabels": {
+      "enabled": true,
+      "style": {
+        "fontWeight": "bold",
+        "color": "yellow"
+      }
+    }
+  },
+  "legend": {
+    "itemStyle": {
+      "color": "white"
+    },
+    "layout": "horizontal",
+    "align": "center",
+    "verticalAlign": "bottom",
+    "borderWidth": 0
+  },
+  "plotOptions": {
+    "column": {
+      "stacking": "normal",
+      "dataLabels": {
+        "enabled": true,
+        "color": "white"
+      }
+    }
+  },
+  "series": [
+    {
+      "name": "Amendment",
+      "data": [0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "name": "Broken PTP",
+      "data": [1, 1, 1, 1, 1, 1, 1]
+    },
+    {
+      "name": "CCB Rate Reduction",
+      "data": [0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "name": "CCB Texas Title Loan",
+      "data": [0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "name": "Funding",
+      "data": [0, 0, 0, 0, 0, 1, 0]
+    },
+    {
+      "name": "HelloSign",
+      "data": [0, 0, 2, 0, 0, 0, 0]
+    },
+    {
+      "name": "Origination",
+      "data": [4, 6, 4, 2, 4, 6, 0]
+    },
+    {
+      "name": "Servicing",
+      "data": [2, 10, 7, 5, 6, 4, 2]
+    },
+    {
+      "name": "Store Reviews",
+      "data": [0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "name": "Welcome Text",
+      "data": [0, 2, 1, 1, 0, 0, 0]
+    }
+  ]
+}
