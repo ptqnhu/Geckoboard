@@ -1,0 +1,79 @@
+{
+  "chart": {
+    "type": "column",
+    "backgroundColor": "transparent"
+  },
+  "title": {
+    "text": "Outbound Text Volume After Hours via SBT",
+    "style": {
+      "color": "white"
+    }
+  },
+  "xAxis": {
+    "categories": [
+      "05/04 - Sun",
+      "05/05 - Mon",
+      "05/06 - Tue",
+      "05/07 - Wed",
+      "05/08 - Thu",
+      "05/09 - Fri",
+      "05/10 - Sat"
+    ],
+    "labels": {
+      "style": {
+        "color": "white"
+      }
+    }
+  },
+  "yAxis": {
+    "title": {
+      "text": "Text Volume",
+      "style": {
+        "color": "white"
+      }
+    },
+    "min": 0,
+    "labels": {
+      "style": {
+        "color": "white"
+      }
+    },
+    "stackLabels": {
+      "enabled": true,
+      "style": {
+        "fontWeight": "bold",
+        "color": "yellow"
+      }
+    }
+  },
+  "legend": {
+    "itemStyle": {
+      "color": "white"
+    },
+    "layout": "horizontal",
+    "align": "center",
+    "verticalAlign": "bottom",
+    "borderWidth": 0
+  },
+  "plotOptions": {
+    "column": {
+      "stacking": "normal",
+      "dataLabels": {
+        "enabled": true,
+        "color": "white"
+      }
+    }
+  },
+  "series": [
+    {
+      "color": "#b2422e",
+      "name": "0AM - 8AM",
+      "data": [6, 5, 6, 7, 8, 7, 5]
+    },
+    {
+      "color": "#244f26",
+      "name": "5PM - 12AM",
+      "data": [4, 13, 4, 9, 5, 15, 0]
+    }
+  ]
+}
